@@ -2,14 +2,14 @@
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 13:57:26
  * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-11 20:19:52
+ * @LastEditTime: 2023-04-12 16:32:04
  * @Description: 
 -->
 <script setup lang="ts">
 import { computed } from 'vue'
 import FormulaWrapper from './FormulaWrapper.vue'
 import { toPng } from 'html-to-image'
-import { createFormulaService } from '@/bs/formula-gen/formulaService'
+import { createFormulaService } from '@/bs/formulaService'
 
 const service = createFormulaService();
 

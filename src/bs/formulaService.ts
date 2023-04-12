@@ -1,15 +1,15 @@
-import type { FormularRule } from "../arith-rules/FormularRule"
+import type { FormularRule as FormulaRule } from "./arith-rules/FormulaRule"
 
 /*
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 20:00:42
  * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-11 20:25:58
+ * @LastEditTime: 2023-04-12 16:32:02
  * @Description: 
  */
 export interface FormulaService {
-    genFormula(rule: FormularRule): string;
-    genFormulas(rule: FormularRule, num: number): string[];
+    genFormula(rule: FormulaRule): string;
+    genFormulas(rule: FormulaRule, num: number): string[];
 }
 
 export function createFormulaService(): FormulaService {
@@ -18,7 +18,7 @@ export function createFormulaService(): FormulaService {
         return Math.floor(Math.random() * max);
     }
 
-    function genFormula(rule: FormularRule): string {
+    function genFormula(rule: FormulaRule): string {
         let isOk = false
         let ret = ''
         while (!isOk) {
@@ -38,7 +38,7 @@ export function createFormulaService(): FormulaService {
         return ret
     }
 
-    function genFormulas(rule: FormularRule, num: number): string[] {
+    function genFormulas(rule: FormulaRule, num: number): string[] {
         const arr: string[] = [] 
         for (let i = 0;i < num;i++) {
             arr.push(genFormula(rule))
