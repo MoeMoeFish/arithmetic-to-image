@@ -1,8 +1,8 @@
 <!--
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 13:57:26
- * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-12 16:32:04
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-04-15 01:07:28
  * @Description: 
 -->
 <script setup lang="ts">
@@ -22,109 +22,6 @@ const formulasProps = computed(() => {
         }
     })
 })
-
-const testFormulas = [
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-    { text: '21 + 32 = ' }, 
-];
 
 function download(url: string) {
     var a = document.createElement('a');
@@ -156,10 +53,12 @@ function onSaveClick() {
 </template>
 
 <style scoped>
-#formular-result {
+#formula-result {
     background: #fff;
     color: #000;
+    font-size: 18px;
 }
+
 .button-line {
     justify-content: end;
 }
