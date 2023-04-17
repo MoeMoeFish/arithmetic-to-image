@@ -1,12 +1,13 @@
-import type { FormularRule as FormulaRule } from "./arith-rules/FormulaRule"
-
 /*
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 20:00:42
  * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-12 16:32:02
- * @Description: 
+ * @LastEditTime: 2023-04-17 19:28:33
+ * @Description: the entrance for formula business
  */
+
+import type { FormulaRule } from "./arith-rules/FormulaRule"
+
 export interface FormulaService {
     genFormula(rule: FormulaRule): string;
     genFormulas(rule: FormulaRule, num: number): string[];
