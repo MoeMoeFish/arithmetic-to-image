@@ -2,7 +2,7 @@
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 13:53:23
  * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-11 15:17:20
+ * @LastEditTime: 2023-04-22 00:38:05
  * @Description: 
 -->
 <script lang="ts" setup>
@@ -18,7 +18,6 @@
         <el-column :span="6">
             <span class="form-title">题目类型:</span>
             <el-select v-model="questionType" class="m-2" placeholder="Select" size="large">
-                <el-option label="20以内加减法" />
             </el-select>
         </el-column> 
     </el-row>

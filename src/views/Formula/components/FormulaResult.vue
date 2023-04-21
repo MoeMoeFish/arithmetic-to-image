@@ -1,8 +1,8 @@
 <!--
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-11 13:57:26
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2023-04-15 01:07:28
+ * @LastEditors: moemoefish moemoefish@qq.com
+ * @LastEditTime: 2023-04-21 23:20:14
  * @Description: 
 -->
 <script setup lang="ts">
@@ -10,10 +10,11 @@ import { computed } from 'vue'
 import FormulaWrapper from './FormulaWrapper.vue'
 import { toPng } from 'html-to-image'
 import { createFormulaService } from '@/bs/formulaService'
+import { createQuestionService } from '@/bs/question/questionService'
 
-const service = createFormulaService();
+const service = createQuestionService()
 
-let formulas = service.genFormulas({ name: '20', rules: []}, 100)
+let formulas = service.genPartialMultipleAdditionLessThan20()
 
 const formulasProps = computed(() => {
     return formulas.map(v => {
