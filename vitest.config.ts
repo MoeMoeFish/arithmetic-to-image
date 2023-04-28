@@ -2,7 +2,7 @@
  * @Author: moemoefish moemoefish@qq.com
  * @Date: 2023-04-10 19:09:17
  * @LastEditors: moemoefish moemoefish@qq.com
- * @LastEditTime: 2023-04-27 19:28:23
+ * @LastEditTime: 2023-04-28 11:04:01
  * @Description: 
  */
 import { fileURLToPath } from 'node:url'
@@ -20,7 +20,7 @@ export default mergeConfig(
     },
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src'))
+        '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     }
   })
